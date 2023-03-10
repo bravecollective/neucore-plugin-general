@@ -1,0 +1,20 @@
+{
+    "name": "bravecollective/neucore-plugin-general",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "BraveCollective\\NeucorePluginGeneral\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.0",
+        "tkhamez/neucore-plugin": "^2.0"
+    },
+    "config": {
+        "platform": {
+            "php": "8.0.0"
+        },
+        "sort-packages": true
+    }
+}

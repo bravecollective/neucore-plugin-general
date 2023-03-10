@@ -1,0 +1,27 @@
+#file: noinspection YAMLSchemaValidation
+
+###
+### Required configuration for all plugins
+###
+
+# A name for the plugin
+name: General
+
+# Full class name of class implementing Neucore\Plugin\ServiceInterface or Neucore\Plugin\GeneralInterface.
+phpClass: BraveCollective\NeucorePluginGeneral\Plugin
+
+# PHP namespace that should be loaded by the PSR-4 autoloader.
+psr4Prefix: BraveCollective\NeucorePluginGeneral
+
+# Relative (to this file) path to the directory containing the classes of the above namespace.
+psr4Path: src
+
+
+###
+### Optional configuration for all plugins
+###
+
+# Additional configuration for the plugin (supports multiline text). This is provided as the value of
+# the PluginConfiguration::$configurationData property.
+configurationData:
+
