@@ -48,7 +48,7 @@ class Plugin implements GeneralInterface
         return [
             new NavigationItem(
                 NavigationItem::PARENT_SERVICE,
-                'Neucore Discord',
+                'Neucore Development (Discord)',
                 '/invite',
                 '_blank',
                 [CoreRole::ANONYMOUS, CoreRole::USER]
