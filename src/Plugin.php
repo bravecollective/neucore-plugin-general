@@ -36,7 +36,7 @@ class Plugin implements GeneralInterface
 
         if ($name === 'invite') {
             return $response
-                ->withHeader('Location', 'https://discord.gg/memUh56u8z')
+                ->withHeader('Location', 'https://discord.gg/9Wwub4BfNs')
                 ->withStatus(302);
         }
 
@@ -48,7 +48,7 @@ class Plugin implements GeneralInterface
         return [
             new NavigationItem(
                 NavigationItem::PARENT_SERVICE,
-                'Neucore Development (Discord)',
+                'Public Discord Server: Brave Diplo + Recruitment',
                 '/invite',
                 '_blank',
                 [CoreRole::ANONYMOUS, CoreRole::USER]
