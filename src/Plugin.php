@@ -34,9 +34,14 @@ class Plugin implements GeneralInterface
         ?CoreAccount $coreAccount,
     ): ResponseInterface {
 
-        if ($name === 'invite') {
+        if ($name === 'brave-discord-invite') {
             return $response
                 ->withHeader('Location', 'https://discord.gg/9Wwub4BfNs')
+                ->withStatus(302);
+        }
+        if ($name === 'imperium-auth') {
+            return $response
+                ->withHeader('Location', 'https://esi.goonfleet.com/')
                 ->withStatus(302);
         }
 
@@ -49,9 +54,16 @@ class Plugin implements GeneralInterface
             new NavigationItem(
                 NavigationItem::PARENT_SERVICE,
                 'Public Discord Server: Brave Diplo + Recruitment',
-                '/invite',
+                '/brave-discord-invite',
                 '_blank',
                 [CoreRole::ANONYMOUS, CoreRole::USER]
+            ),
+            new NavigationItem(
+                NavigationItem::PARENT_SERVICE,
+                'Imperium Auth',
+                '/imperium-auth',
+                '_blank',
+                [CoreRole::USER]
             ),
         ];
     }
