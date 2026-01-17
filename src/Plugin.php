@@ -45,7 +45,7 @@ class Plugin implements GeneralInterface
                 ->withStatus(302);
         }
 
-        throw new Exception();
+        throw new Exception("Invalid request: $name");
     }
 
     public function getNavigationItems(): array
